@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100vw;
+}
+
+.banner-wrap {
+  background-image: url(/content/main1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  max-width: 100vw;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #ffff;
+  border-bottom-color: #ffff;
+}
+
+.scrolling {
+  background: black;
+  opacity: 80%;
+}
+.scrolling:hover{
+  opacity:100%;
+}
+
+.about-content{
+  border-radius: 6px;
+}
+
+.project-details{
+  list-style: none;
+}
+
+.social-icons{
+  margin-bottom: 16px;
+}
+
+.card-text span{
+  font-size: smaller;
+}
+
+.prj:hover{
+  background-color: rgba(44, 44, 44);
+  color: #ffff;
+  transition: 200ms;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.card-title{
+  margin-bottom: 6px;
+}
+
+.form-control{
+  min-width: fit-content;
+}
+
+.custom-icons{
+  margin:8px;
+}

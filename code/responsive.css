@@ -1,0 +1,16 @@
+@media screen and (max-width: 480px) {
+
+/* about-me section */
+    .profile {min-height: 245px;height: fit-content;}
+    .about-content{min-height: fit-content;}
+    .badges{display:flex; flex-wrap: wrap;row-gap: 5px;}
+    .badge{margin-left: 2px;display: flex;align-items: center;}
+
+
+/* contact section */
+
+    form{min-width: fit-content;}
+    .form-control{min-width: 216px;width:fit-content}
+    .contacts{margin: 0px -40px;}
+    .form-container{min-width: fit-content;}
+}

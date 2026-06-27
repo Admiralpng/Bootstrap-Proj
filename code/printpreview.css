@@ -1,0 +1,40 @@
+@media print {
+  body{margin-top: 20px;margin-bottom: 20px;}
+  .scrolling{display:none}
+  section {
+  page-break-after: always;
+  break-after: page;
+  }
+
+/* header */
+.header-title{color:black}
+
+/* about-me section */
+  .main-container{color:black}
+  .about-content{display: flex;flex-direction: row; flex-wrap: wrap; min-height: fit-content;}
+  .about-content .row{display: flex; flex-direction: row; max-width: fit-content;}
+  .about-content .row img{max-width:50%}
+  .badge{border:1px solid rgb(56, 56, 56); color: rgb(56, 56, 56)}
+
+/* prj section */
+  .project-details{display: flex; justify-content: center;}
+  .projects-menu .row{display: flex; flex-direction: row; flex-wrap: wrap; width: fit-content}
+  .card-box{width: fit-content; max-width:50%}
+  .card-title{font-size: 15px;}
+  #projects-menu{scale: 1.4;margin-top: 150px;}
+
+
+/* contact section */
+  #contact{scale: 1.4;margin-top: 90px;}
+}
+@page :right{
+  @top-right {
+    content: "Page " counter(number);
+  }
+}
+@page :left{
+  @bottom-left {
+    content: "Page " counter(number);
+  }
+}
+
