@@ -61,6 +61,7 @@ body {
 
 .about-content {
   border-radius: 6px;
+  min-height: fit-content;
 }
 
 .project-details {
